@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/assets/webIcon/八卦红.svg" id="icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AM_人生是一场自我探索的旅程</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  <script>
+    upDateIcon()
+    function upDateIcon() {
+      let webIcon = document.querySelector("#icon")
+      let time = (new Date().toLocaleTimeString()).split(":")[0]
+      if (time >= 2 & time < 10) {
+        webIcon.href = "/src/assets/webIcon/八卦黑.svg"
+      } else if (time >= 10 & time < 18) {
+        webIcon.href = "/src/assets/webIcon/八卦红.svg"
+      } else {
+        webIcon.href = "/src/assets/webIcon/八卦灰.svg"
+      }
+    }
+  </script>
+</body>
+
 </html>

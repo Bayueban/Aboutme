@@ -1,0 +1,8 @@
+.offcut{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+}
