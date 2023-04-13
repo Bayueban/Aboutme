@@ -8,5 +8,33 @@ html,body,#root,.App{
 }
 
 .App{
-  background: rgb(68, 68, 68);
+  background: rgb(0, 0, 0);
+}
+
+
+/* 滚动槽 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(253, 70, 4);
+  border-radius: 10px;
+}
+
+/* 滑块 */
+::-webkit-scrollbar-thumb {
+  background: rgb(182, 57, 57);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(135, 141, 27);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgb(243, 255, 16);
+  border-radius: 10px;
 }

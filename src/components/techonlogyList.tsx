@@ -19,6 +19,10 @@ const listData = [
         name: 'TypeScript',
         description: '有时候还是要约束自己，但是不约束也不是不行。别惯着别人，也别惯着自己。'
     },
+    {
+        name:'React-Router-Dom',
+        description: '路由都差（qiu）不多哦'
+    }
 ]
 
 export default function TechonlogyList() {

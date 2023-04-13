@@ -1,10 +1,6 @@
 import './App.css'
-import './assets/fonts/mainFont.css'
-
 import { ConfigProvider } from 'antd';
-import Offcut from './components/offcut';
-import Intro from './components/intro';
-
+import Router from './router/router';
 
 function App() {
   return (
@@ -12,12 +8,12 @@ function App() {
       <ConfigProvider
         theme={{
           token: {
-            colorPrimary: 'rgba(191,41,91)',
+            colorPrimary: 'rgba(221,41,91)',
           },
         }}
+
       >
-        <Intro />
-        <Offcut />
+        <Router />
       </ConfigProvider>
     </div>
   )
